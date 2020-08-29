@@ -64,6 +64,7 @@ body {
 }
 /* NavBAr */
 .profile-name {
+  width: 13rem;
   display: flex;
   align-items: center;
   /* justify-content: center; */
@@ -72,7 +73,7 @@ body {
 }
 .navbar-toggler {
   /* margin: 0; */
-  width: 3rem;
+  width: 2.8rem;
   display: flex;
   align-items: center;
 }
@@ -399,7 +400,6 @@ body {
 .my-projects {
   padding: 7rem 0rem;
   /* width: 100%; */
-  /* background-color: yellowgreen; */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -408,16 +408,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* background-color: crimson; */
-  width: 30rem;
-  height: 40rem;
+  /* width: 30rem; */
+  /* height: 40rem; */
   padding-left: 0;
   padding-right: 0;
+  padding: 3rem 8rem;
 }
 
 .my-projects .projects .my-project-card {
   height: 100%;
-  /* background-color: cornflowerblue; */
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     0.3s box-shadow,
     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
@@ -430,6 +429,7 @@ body {
 }
 .my-projects .projects .my-project-card img {
   height: 25rem;
+  display: flex;
 }
 .my-projects .projects .my-project-card .card-body {
   height: 15rem;
@@ -468,7 +468,7 @@ body {
 }
 /* Footer ends */
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 479px) {
   body {
     /* background-color: yellow; */
   }
@@ -477,7 +477,7 @@ body {
   }
   .my_header .my-navbar .navbar .navbar-brand {
     padding: 1rem 0rem;
-    font-size: 30px;
+    font-size: 26px;
   }
   .my_header .my-navbar .navbar .navbar-nav .nav-item {
     font-size: 14px;
@@ -583,7 +583,6 @@ body {
 
   .my-skills .row {
     padding: 1rem;
-    background-color: lightcoral;
     margin: auto 0%;
   }
   .my-skills .container .row .skill-title {
@@ -637,7 +636,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 792px) and (min-width: 341px) {
+@media only screen and (max-width: 792px) and (min-width: 479px) {
   .banner-action-buttons .btn {
     margin-top: 0.5rem;
   }

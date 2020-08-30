@@ -442,6 +442,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-color: crimson; */
 }
 /* Footer starts */
 .my_footer .container .social {
@@ -620,7 +621,7 @@ body {
 
   .my-projects .projects .my-project-card {
     width: 20rem;
-    height: 32rem;
+    height: 38rem;
     margin: 0 auto;
     transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
       0.3s box-shadow,

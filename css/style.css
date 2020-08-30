@@ -438,7 +438,11 @@ body {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
-
+.project-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* Footer starts */
 .my_footer .container .social {
   padding: 5rem 0;
@@ -625,8 +629,8 @@ body {
     cursor: pointer;
   }
   .my-projects .projects .my-project-card img {
-    height: 20rem;
-    width: 18rem;
+    height: 13rem;
+    width: 20rem;
     margin: 0 auto;
   }
   .my_footer .social .social-icons a > i {
@@ -637,6 +641,13 @@ body {
 }
 
 @media only screen and (max-width: 792px) and (min-width: 479px) {
+  .profile-name img {
+    width: 12vw;
+  }
+  .my_header .my-navbar .navbar .navbar-brand {
+    padding: 1rem 0rem;
+    font-size: 28px;
+  }
   .banner-action-buttons .btn {
     margin-top: 0.5rem;
   }
@@ -691,11 +702,40 @@ body {
   .my-skills .skills-list .skill {
     padding: 0.5rem;
   }
+  .my-projects .row {
+    padding: 7rem 3rem;
+    /* width: 100%; */
+    /* background-color: yellowgreen; */
+  }
+
+  .my-projects .projects .my-project-card {
+    width: 20rem;
+    height: 32rem;
+    margin: 0 auto;
+    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+      0.3s box-shadow,
+      0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+    /* padding: 14px 80px 18px 36px; */
+    cursor: pointer;
+  }
+  .my-projects .projects .my-project-card img {
+    height: 13rem;
+    width: 20rem;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 792px) {
 }
 @media only screen and (max-width: 1910px) and (min-width: 792px) {
+  .profile-name img {
+    width: 12vw;
+  }
+  .my_header .my-navbar .navbar .navbar-brand {
+    padding: 1rem 0rem;
+    font-size: 30px;
+  }
+
   .my-skills .row {
     padding: 7rem 10rem;
     margin: auto 2%;
@@ -703,7 +743,7 @@ body {
   }
 
   .my-skills .skills-list {
-    padding: 1rem 10rem;
+    padding: 1rem 7rem;
     /* background-color: #4458dc; */
   }
 
@@ -713,6 +753,28 @@ body {
   }
   .my-skills .skills-list .skill {
     padding: 0.5rem 2rem;
+  }
+
+  .my-projects .row {
+    padding: 7rem 3rem;
+    /* width: 100%; */
+    /* background-color: yellowgreen; */
+  }
+
+  .my-projects .projects .my-project-card {
+    width: 100%;
+    height: 32rem;
+    margin: 0 auto;
+    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+      0.3s box-shadow,
+      0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+    /* padding: 14px 80px 18px 36px; */
+    cursor: pointer;
+  }
+  .my-projects .projects .my-project-card img {
+    height: 13rem;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 /* **************************************************************8 */

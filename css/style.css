@@ -347,6 +347,7 @@ body {
   /* word-break: break-word; */
   /* text-align: justify; */
   /* text-justify: inter-word; */
+  display: block;
   word-spacing: normal;
   font-size: 14px;
 
@@ -384,10 +385,9 @@ body {
   padding: 2rem 5rem;
 }
 .my-skills .para {
-  justify-content: center;
   word-break: break-word;
-  text-align: center;
-  width: 70%;
+  display: block;
+  width: 85%;
   margin: auto;
   /* text-align: justify; */
   text-justify: inter-word;
@@ -417,7 +417,7 @@ body {
   justify-content: space-around;
 }
 .my-projects .row .my-projects-title {
-  padding: 0 15rem;
+  padding: 0 9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -432,9 +432,10 @@ body {
 
 .my-projects .row .my-projects-title .para {
   word-break: break-word;
-  text-align: center;
-  width: 70%;
-  margin: auto;
+  /* text-align: center; */
+  width: 85%;
+  display: block;
+  margin: 0 auto;
   /* text-align: justify; */
   text-justify: inter-word;
   /* background-color: yellowgreen; */
@@ -638,16 +639,12 @@ p#copyright {
     /* background-color: chocolate; */
   }
   .my_about .my-about-section .row .about-title .paragraph p {
-    /* background-color: yellowgreen; */
-    justify-content: center;
+    display: block;
     word-break: break-word;
     text-align: left;
-    width: 80%;
+    width: 100%;
     margin: auto;
-    /* text-align: justify; */
-    /* text-justify: inter-word; */
-    /* background-color: yellowgreen; */
-    padding: 0 0rem;
+    padding: 0 1rem;
   }
   .my_about .my-about-section .about-title h2 > span {
     /* background-color: hotpink; */
@@ -669,13 +666,11 @@ p#copyright {
     width: 100%;
   }
   .my-skills .para {
-    justify-content: center;
+    display: block;
     word-break: break-word;
     text-align: left;
-    width: 80%;
+    width: 100%;
     margin: auto;
-    /* text-align: justify; */
-    /* text-justify: inter-word; */
     /* background-color: yellowgreen; */
     padding: 0 0rem;
   }
@@ -697,21 +692,17 @@ p#copyright {
   .my-projects .row {
     padding: 7rem 1rem;
     width: 100%;
-    /* background-color: yellowgreen; */
   }
   .my-projects .row .my-projects-title {
     padding: 0 0.5rem;
-    /* background-color: var(--primary-color); */
   }
   .my-projects .row .my-projects-title .para {
     word-break: break-word;
-    text-align: left;
-    width: 80%;
-    /* margin: auto; */
-    /* text-align: justify; */
-    /* text-justify: inter-word; */
-    /* background-color: yellowgreen; */
-    padding: 0 0rem;
+
+    width: 100%;
+    display: block;
+
+    padding: 0 1rem;
   }
   .my-projects .row .my-projects-title h1 {
     font-size: 25px;

@@ -62,6 +62,7 @@ body {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
+
 /* NavBAr */
 .profile-name {
   width: 13rem;
@@ -155,7 +156,7 @@ body {
 }
 .my_main .my-banner .row .banner-title {
   /* background-color: aquamarine; */
-  padding: 5rem 4rem;
+  /* padding: 5rem 4rem; */
   position: relative;
   /* display: flex; */
   /* align-items: center; */
@@ -240,9 +241,9 @@ body {
 .button-primary::after,
 .button-secondary::after {
   position: absolute;
-  left: -2px;
+  left: -1px;
   right: -1px;
-  top: -1px;
+  top: -2px;
   bottom: -2px;
   content: "";
   background: var(--gradient-color);
@@ -343,7 +344,10 @@ body {
   font: normal 500;
   font-family: var (--roboto);
   /* font: normal 500 40px/45px var (--roboto); */
-
+  word-break: break-word;
+  text-align: justify;
+  text-justify: inter-word;
+  word-spacing: normal;
   font-size: 18px;
 
   line-height: 24px;
@@ -399,17 +403,27 @@ body {
 
 .my-projects {
   padding: 7rem 0rem;
-  /* width: 100%; */
+  /* width: 80%; */
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.my-projects .row .my-projects-title {
+  padding: 0 13rem;
+}
+
+.my-projects .row .my-projects-title h1 {
+  font-size: 35px;
+  display: block;
+  font: normal bolder 49px/60px var(--roboto);
+  letter-spacing: 20px;
 }
 .my-projects .projects {
   display: flex;
   align-items: center;
   justify-content: space-around;
   /* width: 30rem; */
-  /* height: 40rem; */
+  height: 50rem;
   padding-left: 0;
   padding-right: 0;
   padding: 3rem 8rem;
@@ -417,8 +431,7 @@ body {
 
 .my-projects .projects .my-project-card {
   height: 100%;
-  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
-    0.3s box-shadow,
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow,
     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
   /* padding: 14px 80px 18px 36px; */
   cursor: pointer;
@@ -428,49 +441,68 @@ body {
   height: 100%;
 }
 .my-projects .projects .my-project-card img {
-  height: 25rem;
+  height: 30rem;
   display: flex;
 }
 .my-projects .projects .my-project-card .card-body {
-  height: 15rem;
+  height: 20rem;
+  /* position: relative; */
 }
 .my-projects .projects .my-project-card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 .project-action {
-  margin-top: 5rem;
+  /* margin-top: rem; */
+  /* position: absolute; */
+  /* bottom: 2rem; */
+  /* left: 38%; */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: crimson; */
 }
 /* Footer starts */
-.my_footer .container .social {
-  padding: 5rem 0;
+.my_footer .container-fluid .social {
+  padding: 3rem 0;
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: space-around; */
   background: url("../assets/footer-bg.png") no-repeat;
   background-size: 100%;
+  /* background-color: crimson; */
 }
 .my_footer .social h5 {
+  /* background-color: darkcyan; */
   display: block;
   font: normal 500 23px/25px var(--roboto);
 }
 .my_footer .social .social-icons {
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /* background-color: yellow; */
+  position: relative;
+}
+.my_footer .social .social-icons a > i {
+  padding: 0 2rem;
+  font-size: 42px;
+  color: var(--gradient-color);
+}
+
+/* .my_footer .social a > i:hover {
+  color: var(--gradient-color);
+} */
+.copyright {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.my_footer .social .social-icons a > i {
-  padding: 2rem;
-  font-size: 42px;
-  color: var(--border-color);
-}
-
-.my_footer .social a > i:hover {
-  color: var(--gradient-color);
+p#copyright {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
 }
 /* Footer ends */
 
@@ -615,28 +647,46 @@ body {
   }
 
   .my-projects .row {
-    padding: 7rem 3rem;
-    /* width: 100%; */
+    padding: 7rem 1rem;
+    width: 100%;
     /* background-color: yellowgreen; */
   }
+  .my-projects .row .my-projects-title {
+    padding: 0 0.5rem;
+    /* background-color: var(--primary-color); */
+  }
 
+  .my-projects .row .my-projects-title h1 {
+    font-size: 25px;
+    display: block;
+    font: normal bolder 40px/40px var(--roboto);
+    letter-spacing: 15px;
+  }
+  .my-projects .projects {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30rem;
+    height: 50rem;
+    padding-left: 0;
+    padding-right: 0; */
+    padding: 3rem 1rem;
+  }
   .my-projects .projects .my-project-card {
-    width: 20rem;
+    width: 100%;
     height: 38rem;
     margin: 0 auto;
-    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
-      0.3s box-shadow,
+    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow,
       0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
     /* padding: 14px 80px 18px 36px; */
     cursor: pointer;
   }
   .my-projects .projects .my-project-card img {
-    height: 13rem;
-    width: 20rem;
+    height: 12rem;
+    width: 100%;
     margin: 0 auto;
   }
   .my_footer .social .social-icons a > i {
-    padding: 2rem;
     font-size: 42px;
     color: var(--gradient-color);
   }
@@ -669,7 +719,15 @@ body {
     font: normal bolder 44px/49px var(--roboto);
     letter-spacing: 15px;
   }
-
+  .button-primary,
+  .button-secondary {
+    background: var(--gradient-color);
+    color: whitesmoke;
+    background-clip: padding-box;
+    transition: background 0.6s ease;
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+  }
   .my-skills .row {
     padding: 7rem 10rem;
     margin: auto 2%;
@@ -700,6 +758,7 @@ body {
   .my-skills .skills-list .skills {
     margin: 0;
     padding: 0.5rem;
+    width: 6rem;
   }
   .my-skills .skills-list .skill {
     padding: 0.5rem;
@@ -709,20 +768,39 @@ body {
     /* width: 100%; */
     /* background-color: yellowgreen; */
   }
+  .my-projects .row .my-projects-title {
+    padding: 0 7rem;
+  }
 
+  .my-projects .row .my-projects-title h1 {
+    font-size: 25px;
+    display: block;
+    font: normal bolder 44px/49px var(--roboto);
+    letter-spacing: 10px;
+  }
+  .my-projects .projects {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30rem;
+    height: 50rem;
+    padding-left: 0;
+    padding-right: 0; */
+    padding: 3rem 2rem;
+  }
   .my-projects .projects .my-project-card {
-    width: 20rem;
-    height: 32rem;
+    width: 100%;
+    height: 37rem;
     margin: 0 auto;
-    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
-      0.3s box-shadow,
+    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow,
       0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
     /* padding: 14px 80px 18px 36px; */
     cursor: pointer;
   }
   .my-projects .projects .my-project-card img {
     height: 13rem;
-    width: 20rem;
+    width: 100%;
+
     margin: 0 auto;
   }
 }
@@ -752,6 +830,8 @@ body {
   .my-skills .skills-list .skills {
     margin: 0;
     padding: 0.5rem 2rem;
+    width: 8rem;
+    /* background-color: crimson; */
   }
   .my-skills .skills-list .skill {
     padding: 0.5rem 2rem;
@@ -759,18 +839,21 @@ body {
 
   .my-projects .row {
     padding: 7rem 3rem;
-    /* width: 100%; */
+    width: 100%;
+  }
+  .my-projects .projects {
     /* background-color: yellowgreen; */
+    padding: 2rem;
   }
 
   .my-projects .projects .my-project-card {
     width: 100%;
     height: 32rem;
     margin: 0 auto;
-    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
-      0.3s box-shadow,
+    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow,
       0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
     /* padding: 14px 80px 18px 36px; */
+    /* background-color: crimson; */
     cursor: pointer;
   }
   .my-projects .projects .my-project-card img {

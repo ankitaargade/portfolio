@@ -66,8 +66,7 @@ let copyright = document.getElementById("copyright");
 let year = new Date();
 let copyrightSymbol = "\u00A9";
 console.log("YEAR=", year.getFullYear());
-copyright.innerText = `Copyright ${copyrightSymbol} ${year.getFullYear()}
-                    All Rights Reserved | This template website is created by Ankita Argade`;
+copyright.innerText = `Copyright ${copyrightSymbol} ${year.getFullYear()} All Rights Reserved. This website is created by Ankita Argade`;
 function myFunction(x) {
   x.classList.toggle("change");
 }

@@ -344,11 +344,11 @@ body {
   font: normal 500;
   font-family: var (--roboto);
   /* font: normal 500 40px/45px var (--roboto); */
-  word-break: break-word;
-  text-align: justify;
-  text-justify: inter-word;
+  /* word-break: break-word; */
+  /* text-align: justify; */
+  /* text-justify: inter-word; */
   word-spacing: normal;
-  font-size: 18px;
+  font-size: 14px;
 
   line-height: 24px;
   /* background-color: tomato; */
@@ -385,6 +385,14 @@ body {
 }
 .my-skills .para {
   justify-content: center;
+  word-break: break-word;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  /* text-align: justify; */
+  text-justify: inter-word;
+  /* background-color: yellowgreen; */
+  padding: 0 2rem;
 }
 
 .my-skills .container .skills-list .skills {
@@ -409,7 +417,10 @@ body {
   justify-content: space-around;
 }
 .my-projects .row .my-projects-title {
-  padding: 0 13rem;
+  padding: 0 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .my-projects .row .my-projects-title h1 {
@@ -417,6 +428,17 @@ body {
   display: block;
   font: normal bolder 49px/60px var(--roboto);
   letter-spacing: 20px;
+}
+
+.my-projects .row .my-projects-title .para {
+  word-break: break-word;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  /* text-align: justify; */
+  text-justify: inter-word;
+  /* background-color: yellowgreen; */
+  padding: 0 2rem;
 }
 .my-projects .projects {
   display: flex;
@@ -447,6 +469,13 @@ body {
 .my-projects .projects .my-project-card .card-body {
   height: 20rem;
   /* position: relative; */
+}
+.my-projects .projects .my-project-card .card-body .card-text {
+  /* background-color: yellowgreen; */
+  /* word-break: break-word; */
+  word-break: break-word;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .my-projects .projects .my-project-card:hover {
   transform: scale(1.05);
@@ -489,9 +518,6 @@ body {
   color: var(--gradient-color);
 }
 
-/* .my_footer .social a > i:hover {
-  color: var(--gradient-color);
-} */
 .copyright {
   display: flex;
   align-items: center;
@@ -611,7 +637,18 @@ p#copyright {
     justify-content: center;
     /* background-color: chocolate; */
   }
-
+  .my_about .my-about-section .row .about-title .paragraph p {
+    /* background-color: yellowgreen; */
+    justify-content: center;
+    word-break: break-word;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    /* text-align: justify; */
+    /* text-justify: inter-word; */
+    /* background-color: yellowgreen; */
+    padding: 0 0rem;
+  }
   .my_about .my-about-section .about-title h2 > span {
     /* background-color: hotpink; */
     display: block;
@@ -620,7 +657,7 @@ p#copyright {
   }
 
   .my-skills .row {
-    padding: 1rem;
+    padding: 1rem 0;
     margin: auto 0%;
   }
   .my-skills .container .row .skill-title {
@@ -630,6 +667,17 @@ p#copyright {
     padding: 0;
     margin: 0;
     width: 100%;
+  }
+  .my-skills .para {
+    justify-content: center;
+    word-break: break-word;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    /* text-align: justify; */
+    /* text-justify: inter-word; */
+    /* background-color: yellowgreen; */
+    padding: 0 0rem;
   }
   .my-skills .skill-title h1 {
     font-size: 25px;
@@ -655,7 +703,16 @@ p#copyright {
     padding: 0 0.5rem;
     /* background-color: var(--primary-color); */
   }
-
+  .my-projects .row .my-projects-title .para {
+    word-break: break-word;
+    text-align: left;
+    width: 80%;
+    /* margin: auto; */
+    /* text-align: justify; */
+    /* text-justify: inter-word; */
+    /* background-color: yellowgreen; */
+    padding: 0 0rem;
+  }
   .my-projects .row .my-projects-title h1 {
     font-size: 25px;
     display: block;
@@ -681,6 +738,7 @@ p#copyright {
     /* padding: 14px 80px 18px 36px; */
     cursor: pointer;
   }
+
   .my-projects .projects .my-project-card img {
     height: 12rem;
     width: 100%;

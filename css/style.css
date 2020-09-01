@@ -345,7 +345,7 @@ body {
   font-family: var (--roboto);
   /* font: normal 500 40px/45px var (--roboto); */
   /* word-break: break-word; */
-  /* text-align: justify; */
+  text-align: left;
   /* text-justify: inter-word; */
   display: block;
   word-spacing: normal;
@@ -390,7 +390,7 @@ body {
   width: 85%;
   margin: auto;
   /* text-align: justify; */
-  text-justify: inter-word;
+  /* text-justify: inter-word; */
   /* background-color: yellowgreen; */
   padding: 0 2rem;
 }
@@ -431,13 +431,13 @@ body {
 }
 
 .my-projects .row .my-projects-title .para {
-  word-break: break-word;
+  /* word-break: break-word; */
   /* text-align: center; */
   width: 85%;
   display: block;
   margin: 0 auto;
   /* text-align: justify; */
-  text-justify: inter-word;
+  /* text-justify: inter-word; */
   /* background-color: yellowgreen; */
   padding: 0 2rem;
 }
@@ -475,8 +475,8 @@ body {
   /* background-color: yellowgreen; */
   /* word-break: break-word; */
   word-break: break-word;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
+  /* text-justify: inter-word; */
 }
 .my-projects .projects .my-project-card:hover {
   transform: scale(1.05);
